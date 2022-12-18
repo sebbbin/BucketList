@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>과제 4</title>
+<script>
+
+function inquiry() { return this.balance; }
+function withdraw(money) { 
+
+this.balance -= money; 
+return money;
+} 
+
+let fresh = new Object(); 
+fresh.owner = "슝슝이"; 
+fresh.code = "컴퓨터학부";
+fresh.balance = 2023;
+fresh.inquiry = inquiry; 
+fresh.withdraw = withdraw;
+</script></head>
+<body>
+<h3>학교 신입생들을 위한 페이지</h3>
+<h5>숭실대학교 입학을 모두 축하드립니다.</h5>
+<hr>
+<script>
+document.write("신입생 : ");
+document.write(fresh.owner + ", ");
+document.write(fresh.code + ", ");
+document.write(fresh.balance + "<br>");
+fresh.withdraw(1897); 
+document.write("학교는 몇년 됐을까<br>" + fresh.inquiry() + "년<br>");
+</script>
+<br>
+<br>
+숭실대 포털 사이트
+<img src="soongsil.jpeg">
+<ul>
+<li><a href="https://fun.ssu.ac.kr/">펀시스템</a>
+<li><a href="https://class.ssu.ac.kr/">온라인 클래스</a>
+<li><a href="https://saint.ssu.ac.kr/irj/portal">유세인트</a>
+<li><a href="https://ssu.ac.kr/">숭실대 메인 페이지</a>
+</ul>
+<hr>
+<audio src="02. 한 페이지가 될 수 있게 (Time of Our Life).mp3"controls loop>
+</body></html>
